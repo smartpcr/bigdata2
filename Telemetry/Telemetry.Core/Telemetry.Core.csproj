@@ -104,14 +104,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Extensions\Microsoft.ServiceBus.Messaging\EventDataExtensions.cs" />
     <Compile Include="Extensions\NLog\LoggerExtensions.cs" />
     <Compile Include="Logging\Event.cs" />
     <Compile Include="Logging\Facet.cs" />
     <Compile Include="Logging\LogSetup.cs" />
     <Compile Include="Logging\NLog\Targets\Loggly.cs" />
-    <Compile Include="Logging\System\DateTimeExtensions.cs" />
-    <Compile Include="Logging\System\ObjectExtensions.cs" />
-    <Compile Include="Logging\System\TypeExtensions.cs" />
+    <Compile Include="Extensions\System\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\System\ObjectExtensions.cs" />
+    <Compile Include="Extensions\System\TypeExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

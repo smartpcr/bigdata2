@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NLog;
 using Telemetry.Api.Analytics;
+using Telemetry.Api.Analytics.Spec;
 using Telemetry.Core;
 using Telemetry.Core.Extensions.NLog;
 using Telemetry.Core.Logging;
@@ -42,10 +43,16 @@ namespace Telemetry.Api.Controllers
 			}
 			catch (Exception ex)
 			{
-				_log.ErrorEvent("ParseEvents", ex,
+				var errorId = _log.ErrorEvent("ParseEvents", ex,
 					new Facet("json", json));
 
-				return new HttpResponseMessage(HttpStatusCode.BadRequest);
+				var error = new { errorId = errorId };
+				var errorJson = JsonConvert.SerializeObject(error);
+
+				return new HttpResponseMessage(HttpStatusCode.BadRequest)
+				{
+					Content = new StringContent(errorJson)
+				};
 			}
 
 			if (Config.Parse<bool>("Telemetry.DeviceEvents.SendToEventHubs"))
