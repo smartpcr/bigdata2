@@ -109,6 +109,9 @@
     <Compile Include="Logging\Facet.cs" />
     <Compile Include="Logging\LogSetup.cs" />
     <Compile Include="Logging\NLog\Targets\Loggly.cs" />
+    <Compile Include="Logging\System\DateTimeExtensions.cs" />
+    <Compile Include="Logging\System\ObjectExtensions.cs" />
+    <Compile Include="Logging\System\TypeExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
