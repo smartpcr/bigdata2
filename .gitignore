@@ -13,7 +13,6 @@ build_temp/*
 
 src/logs/*
 
-**/*.sln*
 bin
 obj
 _ReSharper*
