@@ -54,8 +54,18 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ConfigTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenarios\Cache.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cache.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Scenarios\Config.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Config.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Steps\ConfigSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Telemetry.Core\Telemetry.Core.csproj">
@@ -66,10 +76,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Scenarios\Cache.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Cache.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Scenarios\Config.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Config.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scenarios\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

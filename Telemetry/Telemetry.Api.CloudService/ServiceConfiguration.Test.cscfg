@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Telemetry.Api.CloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="Telemetry.Api">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Environment" value="" />
+      <Setting name="ConfigCacheTimespan" value="00:02:00" />
+      <Setting name="LoggingEnabled" value="true" />
+      <Setting name="Telemetry.DeviceEvents.ConnectionString" value="" />
+      <Setting name="Telemetry.DeviceEvents.EventHubName" value="device-events" />
+      <Setting name="Telemetry.DeviceEvents.SendToEventHubs" value="true" />
+      <Setting name="Telemetry.EventHubs.MaxMessageSizeBytes" value="262144" />
+      <Setting name="Telemetry.EventHubs.EventDataOverheadBytes" value="165" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
