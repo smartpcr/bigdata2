@@ -31,7 +31,7 @@ namespace Telemetry.Api.Analytics.EventHubs
 
 		public void Dispose()
 		{
-			throw new NotImplementedException();
+			// do nothing
 		}
 
 		public bool MoveNext()
@@ -42,7 +42,7 @@ namespace Telemetry.Api.Analytics.EventHubs
 			{
 				dynamic evt = _allEvents[i];
 				evt.receivedAt = DateTime.UtcNow.ToUnixMillseconds();
-				int payloadSize = 0;
+			    int payloadSize;
 				var eventData = EventDataTransform.ToEventData(evt, out payloadSize);
 				var eventSize = payloadSize + EventDataOverheadBytes;
 				if (batchSize + eventSize > MaxBatchSizeBytes)

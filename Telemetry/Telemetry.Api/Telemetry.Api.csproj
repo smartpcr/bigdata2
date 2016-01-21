@@ -257,6 +257,7 @@
     <Compile Include="DelegatingHandlers\StandardResponseHeadersHandler.cs" />
     <Compile Include="Extensions\System.Net.Http\HttpRequestMessageExtensions.cs" />
     <Compile Include="Extensions\System.Net.Http\HttpResponseMessageExtensions.cs" />
+    <Compile Include="Filters\DebugActionWebApiFilter.cs" />
     <Compile Include="Filters\LoggingExceptionFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

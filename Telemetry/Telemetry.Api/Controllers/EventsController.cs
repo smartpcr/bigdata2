@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
-using System.Web.Http;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using NLog;
-using Telemetry.Api.Analytics;
-using Telemetry.Api.Analytics.Spec;
-using Telemetry.Core;
-using Telemetry.Core.Extensions.NLog;
-using Telemetry.Core.Logging;
-
 namespace Telemetry.Api.Controllers
 {
+    using System.Threading.Tasks;
+    using System.Web.Http;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Linq;
+    using NLog;
+    using Telemetry.Api.Analytics.Spec;
+    using Telemetry.Api.Filters;
+    using Telemetry.Core;
+    using Telemetry.Core.Extensions.NLog;
+    using Telemetry.Core.Logging;
+
     public class EventsController : ApiController
     {
 		private readonly Logger _log;
@@ -25,6 +25,7 @@ namespace Telemetry.Api.Controllers
 			_sender = sender;
 		}
 
+        [DebugActionWebApiFilter]
 		public async Task<HttpResponseMessage> Post(HttpRequestMessage requestMessage)
 		{
 			var deviceId = Request.GetDeviceId();
