@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.Core.UnitTests", 
 EndProject
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Telemetry.Api.CloudService", "Telemetry.Api.CloudService\Telemetry.Api.CloudService.ccproj", "{BF64E840-3810-414B-BE53-0C520DFC6625}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventProcessor", "EventProcessor", "{C1F4D778-9632-4239-BE95-798D4B18C905}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeepStorage", "DeepStorage", "{C1F4D778-9632-4239-BE95-798D4B18C905}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.EventProcessor.DeepStorage.Worker", "Telemetry.EventProcessor.DeepStorage.Worker\Telemetry.EventProcessor.DeepStorage.Worker.csproj", "{A2FDA3EF-0D8D-4FD8-A4FF-8905D14943EA}"
 EndProject
@@ -32,6 +32,14 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Telemetry.Database", "Telemetry.Database\Telemetry.Database.sqlproj", "{7B712983-333C-4804-BFC8-70CDCD28C80C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.Entities", "Telemetry.Entities\Telemetry.Entities.csproj", "{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealTime", "RealTime", "{DD858EBF-6A73-45C3-BA34-77262B2FDE13}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Telemetry.EventProcessor.RealTime", "Telemetry.EventProcessor.RealTime\Telemetry.EventProcessor.RealTime.ccproj", "{C310D4D7-7BFC-4E63-9E84-6CFF859A04EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.EventProcessor.RealTime.Storm", "Telemetry.EventProcessor.RealTime.Storm\Telemetry.EventProcessor.RealTime.Storm.csproj", "{A488A48B-C82B-4313-8E93-DC956C85EE05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.EventProcessor.RealTime.Worker", "Telemetry.EventProcessor.RealTime.Worker\Telemetry.EventProcessor.RealTime.Worker.csproj", "{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +89,18 @@ Global
 		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C310D4D7-7BFC-4E63-9E84-6CFF859A04EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C310D4D7-7BFC-4E63-9E84-6CFF859A04EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C310D4D7-7BFC-4E63-9E84-6CFF859A04EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C310D4D7-7BFC-4E63-9E84-6CFF859A04EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A488A48B-C82B-4313-8E93-DC956C85EE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A488A48B-C82B-4313-8E93-DC956C85EE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A488A48B-C82B-4313-8E93-DC956C85EE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A488A48B-C82B-4313-8E93-DC956C85EE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +117,8 @@ Global
 		{0686DD41-A282-41FE-A1A3-C6DB05E00E4B} = {438E6382-14FC-40FF-84FC-D6CB84292CBE}
 		{7B712983-333C-4804-BFC8-70CDCD28C80C} = {438E6382-14FC-40FF-84FC-D6CB84292CBE}
 		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80} = {438E6382-14FC-40FF-84FC-D6CB84292CBE}
+		{C310D4D7-7BFC-4E63-9E84-6CFF859A04EE} = {DD858EBF-6A73-45C3-BA34-77262B2FDE13}
+		{A488A48B-C82B-4313-8E93-DC956C85EE05} = {DD858EBF-6A73-45C3-BA34-77262B2FDE13}
+		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31} = {DD858EBF-6A73-45C3-BA34-77262B2FDE13}
 	EndGlobalSection
 EndGlobal

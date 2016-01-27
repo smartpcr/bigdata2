@@ -114,8 +114,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventHandlers\DeepStorageEventHandler.cs" />
     <Compile Include="EventProcessors\DeepStorageEventProcessor.cs" />
-    <Compile Include="EventReceiver.cs" />
     <Compile Include="EventStores\BlobStorageEventStore.cs" />
     <Compile Include="EventStores\DiskEventStore.cs" />
     <Compile Include="EventStores\EventStoreBase.cs" />
@@ -126,9 +126,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <Content Include="nlog-dev.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nlog-prd.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Telemetry.Core.EventProcessor\Telemetry.Core.EventProcessor.csproj">
+      <Project>{0686DD41-A282-41FE-A1A3-C6DB05E00E4B}</Project>
+      <Name>Telemetry.Core.EventProcessor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Telemetry.Core\Telemetry.Core.csproj">
       <Project>{74bede2d-f0bb-456e-bf9b-aafa69fa02af}</Project>
       <Name>Telemetry.Core</Name>
