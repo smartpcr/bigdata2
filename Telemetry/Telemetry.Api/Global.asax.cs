@@ -9,15 +9,15 @@ using System.Web.Routing;
 
 namespace Telemetry.Api
 {
-	public class WebApiApplication : System.Web.HttpApplication
+    using Telemetry.Core.Logging;
+
+    public class WebApiApplication : System.Web.HttpApplication
 	{
 		protected void Application_Start()
 		{
-			AreaRegistration.RegisterAllAreas();
+			LogSetup.Run();
 			GlobalConfiguration.Configure(WebApiConfig.Register);
-			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
-			BundleConfig.RegisterBundles(BundleTable.Bundles);
 		}
 	}
 }

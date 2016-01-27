@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Breakdown</title>
+    <meta charset="utf-8"/>
+    <link href="Content/c3.css" rel="stylesheet" type="text/css"/>
+    <script src="Scripts/d3.min.js"></script>
+    <script src="Scripts/c3.min.js"></script>
+</head>
+<body>
+<div id="chart"></div>
+
+<script>
+    d3.json('api/queryoutput?name=event-count-201503', function(d) {
+        var chart = c3.generate({
+            size: {
+                height: 600,
+                width: 1200
+            },
+            data: {
+                columns: d,
+                type: 'bar'
+            },
+            axis: {
+                rotated: true
+            }
+        });
+    });
+</script>
+</body>
+</html>

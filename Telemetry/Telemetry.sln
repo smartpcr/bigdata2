@@ -21,6 +21,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventProcessor", "EventProc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.EventProcessor.DeepStorage.Worker", "Telemetry.EventProcessor.DeepStorage.Worker\Telemetry.EventProcessor.DeepStorage.Worker.csproj", "{A2FDA3EF-0D8D-4FD8-A4FF-8905D14943EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dashboard", "Dashboard", "{37657C1D-C86E-4BE4-898C-5E4311E56F35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.DeepStorage.Dashboard", "Telemetry.DeepStorage.Dashboard\Telemetry.DeepStorage.Dashboard.csproj", "{0A7D6208-4163-49E2-9157-62A4640B35CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.DataIngestion.Dashboard", "Telemetry.DataIngestion.Dashboard\Telemetry.DataIngestion.Dashboard.csproj", "{E467F342-64A3-4308-BCB5-7368BE647E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.Core.EventProcessor", "Telemetry.Core.EventProcessor\Telemetry.Core.EventProcessor.csproj", "{0686DD41-A282-41FE-A1A3-C6DB05E00E4B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Telemetry.Database", "Telemetry.Database\Telemetry.Database.sqlproj", "{7B712983-333C-4804-BFC8-70CDCD28C80C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.Entities", "Telemetry.Entities\Telemetry.Entities.csproj", "{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +59,28 @@ Global
 		{A2FDA3EF-0D8D-4FD8-A4FF-8905D14943EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2FDA3EF-0D8D-4FD8-A4FF-8905D14943EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2FDA3EF-0D8D-4FD8-A4FF-8905D14943EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7D6208-4163-49E2-9157-62A4640B35CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7D6208-4163-49E2-9157-62A4640B35CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7D6208-4163-49E2-9157-62A4640B35CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7D6208-4163-49E2-9157-62A4640B35CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E467F342-64A3-4308-BCB5-7368BE647E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E467F342-64A3-4308-BCB5-7368BE647E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E467F342-64A3-4308-BCB5-7368BE647E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E467F342-64A3-4308-BCB5-7368BE647E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0686DD41-A282-41FE-A1A3-C6DB05E00E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0686DD41-A282-41FE-A1A3-C6DB05E00E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0686DD41-A282-41FE-A1A3-C6DB05E00E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0686DD41-A282-41FE-A1A3-C6DB05E00E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B712983-333C-4804-BFC8-70CDCD28C80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B712983-333C-4804-BFC8-70CDCD28C80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B712983-333C-4804-BFC8-70CDCD28C80C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7B712983-333C-4804-BFC8-70CDCD28C80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B712983-333C-4804-BFC8-70CDCD28C80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B712983-333C-4804-BFC8-70CDCD28C80C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +92,10 @@ Global
 		{444D158B-7F0A-4AEA-BF52-46A0FE66E1BA} = {99AC93B6-5282-4B67-A4EA-4B7CB7F0986E}
 		{BF64E840-3810-414B-BE53-0C520DFC6625} = {44DBCC8E-C036-4649-8E09-222C44574068}
 		{A2FDA3EF-0D8D-4FD8-A4FF-8905D14943EA} = {C1F4D778-9632-4239-BE95-798D4B18C905}
+		{0A7D6208-4163-49E2-9157-62A4640B35CD} = {37657C1D-C86E-4BE4-898C-5E4311E56F35}
+		{E467F342-64A3-4308-BCB5-7368BE647E95} = {37657C1D-C86E-4BE4-898C-5E4311E56F35}
+		{0686DD41-A282-41FE-A1A3-C6DB05E00E4B} = {438E6382-14FC-40FF-84FC-D6CB84292CBE}
+		{7B712983-333C-4804-BFC8-70CDCD28C80C} = {438E6382-14FC-40FF-84FC-D6CB84292CBE}
+		{E7EA6B53-6ECC-4ECB-A316-F9B89DE45D80} = {438E6382-14FC-40FF-84FC-D6CB84292CBE}
 	EndGlobalSection
 EndGlobal

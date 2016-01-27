@@ -1,4 +1,4 @@
-﻿$resourceGroupName = "IOT"
+﻿$resourceGroupName = "iot"
 $location = "West US"
 $storageAccountNameVM = "iotstorageaccountvm"
 $storageAccountNameDeepStorage1 = "iotstorageaccountblob1"
