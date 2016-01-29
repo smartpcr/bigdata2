@@ -158,6 +158,7 @@ install_spark()
 	sudo adduser spark sudo
 	sudo mkdir /home/spark
 	sudo chown spark:spark /home/spark
+	
 	 
 #	Add to sudoers file:
 	 
@@ -174,6 +175,8 @@ install_spark()
 	sudo mkdir -p /srv/spark/{logs,work,tmp,pids}
 	sudo chown -R spark:spark /srv/spark
 	sudo chmod 4755 /srv/spark/tmp
+	sudo mkdir /tmp/spark-events
+	sudo chown -R spark:spark /tmp/spark-events 
 
 #	Fifth let’s do a quick test
 #	cd /usr/local/spark	 
