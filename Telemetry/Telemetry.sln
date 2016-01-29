@@ -41,6 +41,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.EventProcessor.Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.EventProcessor.RealTime.Worker", "Telemetry.EventProcessor.RealTime.Worker\Telemetry.EventProcessor.RealTime.Worker.csproj", "{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulator", "Simulator", "{B18147B7-A805-4BA4-B041-0F50A104403C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devices.Simulator", "Device.Simulator\Devices.Simulator.csproj", "{12020E62-C3E3-40E2-94BA-599998A363EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devices.Core", "Devices.Core\Devices.Core.csproj", "{1D59F9D6-076C-4E03-B132-7E2E2742CC00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devices.Simulator.Console", "Devices.Simulator.Console\Devices.Simulator.Console.csproj", "{7698BCF3-2105-44DD-9DC8-6278CF983F0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +109,18 @@ Global
 		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12020E62-C3E3-40E2-94BA-599998A363EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12020E62-C3E3-40E2-94BA-599998A363EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12020E62-C3E3-40E2-94BA-599998A363EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12020E62-C3E3-40E2-94BA-599998A363EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D59F9D6-076C-4E03-B132-7E2E2742CC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D59F9D6-076C-4E03-B132-7E2E2742CC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D59F9D6-076C-4E03-B132-7E2E2742CC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D59F9D6-076C-4E03-B132-7E2E2742CC00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7698BCF3-2105-44DD-9DC8-6278CF983F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7698BCF3-2105-44DD-9DC8-6278CF983F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7698BCF3-2105-44DD-9DC8-6278CF983F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7698BCF3-2105-44DD-9DC8-6278CF983F0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,5 +140,11 @@ Global
 		{C310D4D7-7BFC-4E63-9E84-6CFF859A04EE} = {DD858EBF-6A73-45C3-BA34-77262B2FDE13}
 		{A488A48B-C82B-4313-8E93-DC956C85EE05} = {DD858EBF-6A73-45C3-BA34-77262B2FDE13}
 		{2B2BC22E-74FF-45FB-B8B9-EC7438C42F31} = {DD858EBF-6A73-45C3-BA34-77262B2FDE13}
+		{12020E62-C3E3-40E2-94BA-599998A363EE} = {B18147B7-A805-4BA4-B041-0F50A104403C}
+		{1D59F9D6-076C-4E03-B132-7E2E2742CC00} = {B18147B7-A805-4BA4-B041-0F50A104403C}
+		{7698BCF3-2105-44DD-9DC8-6278CF983F0C} = {B18147B7-A805-4BA4-B041-0F50A104403C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 	EndGlobalSection
 EndGlobal
